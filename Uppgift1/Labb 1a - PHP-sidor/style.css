@@ -1,0 +1,31 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{font-family: Roboto}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+
+main {
+    padding: 1% 10% 0%;
+}
+
+.php{
+    padding: 2%;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 1%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}

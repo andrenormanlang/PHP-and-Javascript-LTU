@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Labb 1A-PHP-sida 6 HTML</title>
+</head>
+
+<body>
+<main>
+    <h1>PHP Send and Receive Data</h1>
+    <p>Both GET and POST create an array (e.g. array( key1 => value1, key2 => value2, key3 => value3, ...)). This array holds key/value pairs, where keys are the names of the form controls and values are the input data from the user.</p>
+    <p>Both GET and POST are treated as $_GET and $_POST. These are superglobals, which means that they are always accessible, regardless of scope - and you can access them from any function, class or file without having to do anything special.</p>
+    <p>This page demonstrates the use of the get and post methods in PHP</p>
+
+    <!--- Step 4 of exercise --->
+    <form action="sida6.php" method="get">
+        <h4>GET Method</h4>
+        Name: <input type="text" name="name"><br><br>
+        Phone: <input type="tel" id="phone" name="phone" pattern="[0-9]{10}"><br><br>
+        <input type="submit"><br><br>
+    </form>
+
+    <!--- Step 6 of exercise --->
+    <form action="sida6.php" method="post">
+        <h4>POST Method</h4>
+        Name: <input type="text" name="name"><br><br>
+        Phone: <input type="tel" id="phone" name="phone" pattern="[0-9]{10}"><br><br>
+        <input type="submit"><br><br>
+    </form>
+
+
+
+</main>
+<footer>
+Luleå tekniska universitet | Webbutveckling II - Skriptspråk och databaser |anolan~1 | 2022
+</footer>
+
+
+</body>
+</html>
