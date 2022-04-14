@@ -35,16 +35,25 @@
     <?php
     if(isset($_POST['btncalculate']))
     {
-        $l=$_POST['le'];
-        $w=$_POST['wi'];
+
         // Steps #4,#6,#7,#8 &#9 of Exercise encompassing both the calculation of both perimeter and area within the same function
-        function calculateCircumference($l,$w){
-            $calculatePerimeter = 2*($l+$w);
-            echo  "Perimeter of a rectangle of length $l and width $w is "  .$calculatePerimeter."<br><br>";
-            $calculateArea = $l*$w;
-            echo  "Area of a rectangle of length $l  and width $w is "  .$calculateArea."<br><br>";
+        function calculateCircumference(): array
+        {
+            $l=$_POST['le'];
+            $w=$_POST['wi'];
+            return [$l,$w];
         }
-        calculateCircumference($l,$w);
+        //Store array values into variables
+        [$l, $w ] = calculateCircumference();
+
+        //Calculate circumference and area
+        $calculateArea=$l*$w;
+        $calculateCircumference=2*($l+$w);
+
+        //Print the function details
+
+        echo "Circumference: $calculateCircumference <br/><br/>Area: $calculateArea";
+
     }
     ?>
 </main>
@@ -58,7 +67,5 @@
     |
     <?php echo date ("Y");?>
 </footer>
-
-
 </body>
 </html>
